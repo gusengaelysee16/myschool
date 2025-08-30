@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Websites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+}
+.container{
+    background-image: linear-gradient(rgba(15,7,5,0),rgba(12,12,12)),url("school.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.main{
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    cursor: pointer;
+}
+.main .logo img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    color: wheat;
+}
+.main .nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 40px;
+}
+.main .nav a{
+    padding: 15px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    height: 2px;
+    transition: 0.5s;
+}
+.main .nav a:hover{
+    color: rgb(155, 155, 160);
+    width: 100%;
+    text-decoration: underline;
+}
+.text{
+    text-align: center;
+    margin-top: 130px;
+}
+.text h1{
+    color: rgb(43, 189, 30);
+    font-size: 42px;
+}
+.text p{
+    color: aqua;
+}
+.text button{
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(56, 68, 136);
+    transition: 0.5s;
+}
+.text button:hover{
+    background-color: white;
+}
+.home{
+    text-align: center;
+    margin-top: 150px;
+}
+.home h1{
+    font-size: 33px;
+}
+.home p{
+    font-size: 13px;
+}
+.academy{
+    display: flex;
+    justify-content: space-between;
+    width: 89%;
+    margin-top: 100px;
+}
+.academy .olevel{
+    background-color: aquamarine;
+    margin-left: 60px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.academy .olevel:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+}
+.academy .olevel h1{
+    margin-bottom: 7px;
+}
+.academy .alevel{
+    background-color: aquamarine;
+    margin-left: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.academy .alevel h1{
+    margin-bottom: 7px;
+}
+.academy .university{
+    background-color: aquamarine;
+    margin-right: -70px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}.academy .alevel:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+}
+.academy .university:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+}
+.academy .university h1{
+    margin-bottom: 7px;
+}
+.image{
+    margin-top: 200px;
+}
+.imaget{
+    text-align: center;
+}
+.imaget h1{
+    font-size: 33px;
+}
+.imaget p{
+    font-size: 13px;
+}
+.container-wrapper .wrapper{
+    height: 30vw;
+    width: 75vh;
+    box-shadow: 10px 10px 10px 10px rgb(0,0,0,0.6);
+    margin-top: 60px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+.container-wrapper .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    width: 100%;
+    height: 100%;
+    animation: slider 20s ease-in-out infinite 
+    alternate ;
+}
+.container-wrapper .wrapper-holder #slider-image-1{
+   background-image: url("download.png");
+   background-position: center;
+   background-size: cover;
+}
+.container-wrapper .wrapper-holder #slider-image-2{
+   background-image: url("yusher.jpg");
+   background-position: center;
+   background-size: cover;
+}
+.container-wrapper .wrapper-holder #slider-image-3{
+   background-image: url("elysee.jpg");
+   background-position: center;
+   background-size: cover;
+}
+.container-wrapper .wrapper-holder #slider-image-4{
+   background-image: url("seenner.jpg");
+   background-position: center;
+   background-size: cover;
+}
+.container-wrapper{
+    position: relative;
+    
+}
+.container-wrapper .button-holder .button{
+    background-color: rgb(10, 10, 10);
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin: .3rem;
+    display: inline-block;
+}
+.container-wrapper .button-holder{
+    position: absolute;
+    left: 24%;
+    bottom: 0%;
+}
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+.container-wrapper h1{
+    margin-top: 60px;
+    margin-left: 250px;
+}
+.image .container-wrapper{
+    margin: 5rem auto;
+    margin-left: 350px;
+}
+.updatetext{
+    text-align: center;
+    margin-top: 200px;
+}
+.updatetext h1{
+    font-size: 33px;
+}
+.updatetext p{
+    font-size: 13px;
+}
+.updateclass{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-top: 60px;
+   
+}
+.updateclass .update1{
+    margin-left:40px ;
+    background-color: aqua;
+    border-radius: 2px solid black;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.6);
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+.updateclass .update1 img{
+    width: 370px;
+    height: 200px;
+}
+.updatelatest h1{
+    margin-top: 90px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.containerlogin{
+    height: 50px;
+    margin-top: 90px;
+    padding: 10px
+}
+.containerlogin .logintext h1{
+    font-size: 33px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.loginschool{
+    width: 500px; 
+    box-shadow: 10px 10px 10px 10px rgb(0,0,0,0.6);
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 400px;
+    border-radius: 10px;
+}
+.containerlogin .loginschool .fistname label{
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+.containerlogin .loginschool .fistname input{
+    padding: 10px;
+    width: 95%;
+}
+.containerlogin .loginschool .password input{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(51, 100, 190);
+}
+footer{
+     margin-top: 400px;
+     background-color: #111;
+}
+.breaks .a i{
+    justify-content: center;
+    font-size: 2rem;
+}
+.a{
+    display: flex;
+    justify-content: center;
+}
+.a a{
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin: 10px;
+}
+.b ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.b ul li{
+    padding: 15px;
+    font-size: 25px;
+    list-style: none;
+}
+.b ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.b ul li a:hover{
+    color: rgb(49, 53, 53);
+}
+.copy p{
+    text-align: center;
+    color: #f4f4f4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) { 
+    .container{
+        width: 100%;
+    }  
+    .main .nav ul{
+        display: block;
+    }
+    .academy{
+        display: block;
+    }
+    .academy .alevel{
+        margin-top: 10px;
+        width: 350px;
+        margin-left: 50px;
+    }
+    .academy .university{
+        margin-top: 10px;
+        width: 350px;
+        margin-left: 50px;
+    }
+    .academy .olevel{
+        width: 350px;
+        margin-left: 50px;
+    }
+    .container-wrapper {
+        display: contents;
+    }
+    .container-wrapper .wrapper{
+        width: 50vh;
+        height: 60vw;
+    }
+    .updateclass .update1{
+        width: 370px;
+        margin-top: 15px;
+    }
+    .updateclass{
+        display: block;
+        margin-left: 20px;
+    }
+    .loginschool{
+        width: 300px;
+        margin-left: 65px;
+    }
+    .a a{
+        padding: 5px;
+    }
+    .b ul li{
+        font-size: 15px;
+    }
+}
+    </style>
+   <div class="container">
+        <div class="main">
+            <div class="logo">
+                <img src="logoschool.png" alt=""><p style="color: white; margin-top: 40px; font-weight: 700;">ELYSEE</p>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Academics">Academics</a></li> 
+                    <li><a href="#Image">Images</a></li>
+                    <li><a href="#Update">Updates</a></li>
+                    <li><a href="#Contact us">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="text">
+                <img src="logoschool.png" alt="" style="margin-left: 0px; width: 100px; height: 100px;">
+                <h1>WELCOME TO OUR ACADEMY OF GUSENGA ELYSEE</h1>
+                <p>our missin nis to provides goot out come to our students for better development<br>
+                of our country</p>
+                <button>Hire us</button>
+            </div>
+    </div>
+    <section id="Academics">
+        <div class="home">
+            <h1>OUR ACADEMY</h1>
+            <p>Our academy depends on number of students we have</p>
+        </div>
+        <div class="academy">
+            <div class="olevel">
+                <h1> O'LEVEL</h1>
+                <p>In o'level we have three classes but on<br> of it have A and B.we have S1,S2 and S3<br> and we have good students every one<br>
+                sit on her/his own desk with<br> chair and box carry</p>
+            </div>
+            <div class="alevel">
+                <h1>A'LEVEL</h1>
+                <p>In o'level we have three classes but on<br> of it have A and B.we have S1,S2 and S3<br> and we have good students every one<br>
+                sit on her/his own desk with<br> chair and box carry</p>
+            </div>
+            <div class="university">
+                <h1>UNIVERSITY</h1>
+                <p>In university we have 4 GRADES classes but on<br> of it have A and B.we have G1,G2 and G3<br> and we have good students every one<br>
+                sit on her/his own desk with<br> chair and box carry</p>
+            </div>
+        </div>
+    </section>
+    <section id="Image">
+        <div class="image">
+            <div class="imaget">
+                <h1>OUR IMAGES</h1>
+                <p>This is images that show us and what we do</p>
+            </div>
+            <div class="container-wrapper">
+                <h1>STUDENTS</h1>
+              <div class="wrapper">
+                <div class="wrapper-holder">
+                    <div id="slider-image-1"></div>
+                    <div id="slider-image-2"></div>
+                    <div id="slider-image-3"></div>
+                    <div id="slider-image-4"></div>
+                </div>
+                <div class="button-holder">
+                    <a href="#slider-image-1" class="button"></a>
+                    <a href="#slider-image-2" class="button"></a>
+                    <a href="#slider-image-3" class="button"></a>
+                    <a href="#slider-image-4" class="button"></a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="Update">
+        <div class="updates">
+            <div class="updatetext">
+                <h1>UPDATES TODAY</h1>
+                <p>the new new abou our school</p>
+            </div>
+            <div class="updatelatest">
+                <h1>LATEST NEWS</h1>
+            </div>
+            <div class="updateclass">
+                <div class="update1">
+                    <img src="matser.jpg" alt="">
+                    <p>Headmaster of this school have changed the law due<br>
+                       to how the school was going tp become first school in <br>
+                       there district this led to many parents to find a place <br>
+                       of there children</p>
+                </div>
+                <div class="update1">
+                    <img src="metod.jpg" alt="">
+                    <p>Prefe des etude says,"Many childre in this year pass well",<br>
+                        due to a method we used of given more exercises in vacance <br>
+                        then it will be important when we ask parents help for helping<br>
+                        there chidren and prevent more electronis</p>
+                </div>
+                <div class="update1">
+                    <img src="government.jpg" alt="">
+                    <p>Government aks help for parents for helping children to be<br>
+                       allowed in making exam which one xcan pass can get scholar ship <br>
+                       then for some one who pass it can get for going and stud in USA<br>
+                        and other more places</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="login">
+        <div class="containerlogin">
+            <div class="logintext">
+                <h1>REGISTARTION</h1>
+            </div>
+           <div class="loginschool">
+            <div class="fistname">
+                <label for="firstname">First Name</label>
+                <input type="text" placeholder="first name">
+            </div>
+            <div class="fistname">
+                <label for="secondname">Second Name</label>
+                <input type="text" placeholder="second name">
+            </div>
+            <div class="fistname">
+                <label for="firstname">Password</label>
+                <input type="password" placeholder="password">
+            </div>
+            <div class="password">
+                <input type="submit" value="submit">
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer>
+        <div class="breaks">
+            <div class="a">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="b">
+                <ul>
+                     <li><a href="#">Home</a></li>
+                       <li><a href="#">Academics</a></li>
+                       <li><a href="#">Images</a></li>
+                       <li><a href="#">Updates</a></li>
+                       <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="copy">
+                <p>copyright &copy;Designed by: <span>Gusenga Elysee</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
