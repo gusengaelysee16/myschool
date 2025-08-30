@@ -346,16 +346,16 @@ footer{
     }
     .academy .alevel{
         margin-top: 10px;
-        width: 350px;
+        width: 320px;
         margin-left: 20px;
     }
     .academy .university{
         margin-top: 10px;
-        width: 350px;
+        width: 320px;
         margin-left: 20px;
     }
     .academy .olevel{
-        width: 350px;
+        width: 320px;
         margin-left: 20px;
     }
     .container-wrapper {
@@ -364,7 +364,7 @@ footer{
     .container-wrapper .wrapper{
         width: 50vh;
         height: 60vw;
-        margin-left: 70px;
+        margin-left: 38px;
     }
     .container-wrapper h1 {
         margin-left: 150px;
@@ -372,24 +372,33 @@ footer{
     .updateclass .update1{
         width: 370px;
         margin-top: 15px;
-        margin-left: -10px;
+        margin-left: 10px;
     }
     .updateclass{
         display: block;
-        margin-left: 20px;
+        margin-left: 40px;
     }
     .updatelatest h1{
         margin-left: 10px;
     }
     .loginschool{
-        width: 300px;
-        margin-left: 35px;
+        width: 250px;
+        margin-left: 29px;
     }
     .a a{
         padding: 5px;
     }
     .b ul li{
         font-size: 15px;
+    }
+    .updateclass .update1 img {
+        width: 300px;
+        height: 200px;
+    }
+    .updateclass .update1{
+        width: 300px;
+        margin-top: 15px;
+        margin-left: -10px;
     }
 }
     
